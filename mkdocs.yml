@@ -7,29 +7,29 @@ nav:
   - 首页: index.md
   - 开发:
     - 八股文:
-      - Golang: develop\interview_cliche\I_Golang.md
-      - 数据结构与算法: develop\interview_cliche\I_DSAA.md
-      - MySQL: develop\interview_cliche\I_MySQL.md
-      - Redis: develop\interview_cliche\I_Redis.md 
+      - Golang: develop/interview_cliche/I_Golang.md
+      - 数据结构与算法: develop/interview_cliche/I_DSAA.md
+      - MySQL: develop/interview_cliche/I_MySQL.md
+      - Redis: develop/interview_cliche/I_Redis.md 
     - 后端:
-      - GoFrame: develop\backend\GoFrame.md
+      - GoFrame: develop/backend/GoFrame.md
     - 前端:
-      - Vue3: develop\frontend\Vue3.md
-      - React: develop\frontend\React.md
+      - Vue3: develop/frontend/Vue3.md
+      - React: develop/frontend/React.md
     - 版本控制:
-      - Git: develop\version_control\Git.md
+      - Git: develop/version_control/Git.md
   - 知识库: 
     - 编程语言:
       - Golang: 
-        - Go基础: tech\Language\golang\GoLang基础.md
-        - Go进阶: tech\Language\golang\GoLang进阶.md
+        - Go基础: tech/Language/golang/GoLang基础.md
+        - Go进阶: tech/Language/golang/GoLang进阶.md
         
       - Python: 
-        - Python基础: tech\Language\python\Python基础.md
-        - Python进阶: tech\Language\python\Python进阶.md
+        - Python基础: tech/Language/python/Python基础.md
+        - Python进阶: tech/Language/python/Python进阶.md
     - 数据库:
-      - MySQL: tech\Database\MySQL.md
-      - Redis: tech\Database\Redis.md
+      - MySQL: tech/Database/MySQL.md
+      - Redis: tech/Database/Redis.md
     # - 中间件:
     #   - Kafka:
     #   - RabbitMQ:
@@ -39,8 +39,8 @@ nav:
     #   - Leetcode:
   - 标签: tags.md
   - 工具: 
-    - 技术工具: tools\技术工具.md
-    - AIGC: tools\AIGC.md
+    - 技术工具: tools/技术工具.md
+    - AIGC: tools/AIGC.md
   - 博客: blog/index.md
 
 theme:

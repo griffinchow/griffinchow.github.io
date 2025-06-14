@@ -1,0 +1,161 @@
+site_name: GC's Docs
+site_url: https://griffinchow.github.io
+site_description: 技术改变世界
+site_author: Griffin Chow
+
+nav:
+  - 首页: index.md
+  - 开发:
+    - 八股文:
+      - Golang: develop\interview_cliche\I_Golang.md
+      - 数据结构与算法: develop\interview_cliche\I_DSAA.md
+      - MySQL: develop\interview_cliche\I_MySQL.md
+      - Redis: develop\interview_cliche\I_Redis.md 
+    - 后端:
+      - GoFrame: develop\backend\GoFrame.md
+    - 前端:
+      - Vue3: develop\frontend\Vue3.md
+      - React: develop\frontend\React.md
+    - 版本控制:
+      - Git: develop\version_control\Git.md
+  - 知识库: 
+    - 编程语言:
+      - Golang: 
+        - Go基础: tech\Language\golang\GoLang基础.md
+        - Go进阶: tech\Language\golang\GoLang进阶.md
+        
+      - Python: 
+        - Python基础: tech\Language\python\Python基础.md
+        - Python进阶: tech\Language\python\Python进阶.md
+    - 数据库:
+      - MySQL: tech\Database\MySQL.md
+      - Redis: tech\Database\Redis.md
+    # - 中间件:
+    #   - Kafka:
+    #   - RabbitMQ:
+    #   - Nginx:
+    # - 数据结构与算法:
+    #   - 理论知识: 
+    #   - Leetcode:
+  - 标签: tags.md
+  - 工具: 
+    - 技术工具: tools\技术工具.md
+    - AIGC: tools\AIGC.md
+  - 博客: blog/index.md
+
+theme:
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: brown
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: brown
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  language: zh
+  
+  name: material
+  
+  features:
+
+    #自动隐藏
+    #- header.autohide
+
+    # 导航标签
+    - navigation.tabs
+
+    # 导航标签粘性
+    # - navigation.tabs.sticky
+
+    - navigation.instant
+
+    # 进度指示器
+    - navigation.instant.progress
+
+    # 返回顶部的按钮 在上滑时出现
+    - navigation.top
+
+    # 打开Tab时左侧目录全部展开 
+    # - navigation.expand
+
+    # 启用节索引页后，可以将文档直接附加到节 
+    - navigation.indexes
+
+    # 导航路径（面包屑）
+    - navigation.path
+
+    # 搜索建议
+    - search.suggest
+
+    # 搜索出的文章关键词加入高亮
+    - search.highlight
+
+    # 代码复制 
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate 
+  icon:
+    repo: fontawesome/brands/github #右上角图标
+    logo: logo
+  repo_url: https://github.com/griffinchow/griffinchow.github.io # 右上角点击跳转的链接
+ 
+
+plugins:
+  - search
+  - blog:
+      post_url_date_format: yyyy/MM/dd
+      categories_name: 分类
+      categories_allowed:
+        - 项目
+        - 问题
+  - tags:
+      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
+
+
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - tables
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true

@@ -18,6 +18,7 @@ nav:
       - React: develop/frontend/React.md
     - 版本控制:
       - Git: develop/version_control/Git.md
+      - SVN: develop/version_control/SVN.md
   - 知识库: 
     - 编程语言:
       - Golang: 
@@ -61,6 +62,9 @@ theme:
   language: zh
   
   name: material
+
+  repo_name: griffinchow's document # 右上角显示的名称
+  repo_url: https://github.com/griffinchow/griffinchow.github.io # 右上角点击跳转的链接
   
   features:
 
@@ -102,9 +106,9 @@ theme:
     - content.action.view
     - content.code.annotate 
   icon:
-    repo: fontawesome/brands/github #右上角图标
+    repo: fontawesome/brands/git-alt #右上角图标
     logo: logo
-  repo_url: https://github.com/griffinchow/griffinchow.github.io # 右上角点击跳转的链接
+  
  
 
 plugins:

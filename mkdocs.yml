@@ -44,28 +44,39 @@ nav:
     - AIGC: tools/AIGC.md
   - 博客: blog/index.md
 
+repo_name: griffinchow's document # 右上角显示的名称
+repo_url: https://github.com/griffinchow/griffinchow.github.io # 右上角点击跳转的链接
+  
+# 版权信息
+copyright: Copyright &copy; 2022 ~ now | Griffin Chow
+
 theme:
+  name: material
   palette: 
     # Palette toggle for light mode
     - scheme: default
-      primary: brown
+      primary: white
+      accent: black
+      code_styles:
+        light: vs
+        dark: vs
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: brown
+      primary: black
+      accent: white
+      code_styles:
+        light: vs
+        dark: vs
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   language: zh
   
-  name: material
 
-  repo_name: griffinchow's document # 右上角显示的名称
-  repo_url: https://github.com/griffinchow/griffinchow.github.io # 右上角点击跳转的链接
-  
   features:
 
     #自动隐藏
@@ -102,9 +113,11 @@ theme:
 
     # 代码复制 
     - content.code.copy
+    - content.code.annotate
+    - content.code.select
     - content.action.edit
     - content.action.view
-    - content.code.annotate 
+ 
   icon:
     repo: fontawesome/brands/git-alt #右上角图标
     logo: logo
@@ -153,6 +166,8 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
+      use_pygments: true # 使用Pygments进行代码高亮
+      css_class: highlight # 代码块的CSS类
       anchor_linenums: true
       linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
